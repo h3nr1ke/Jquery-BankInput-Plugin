@@ -6,7 +6,7 @@
  */
 (function ( $ ) {
   $.fn.bankInput = function() {
-    this.on("keyup",function(e){
+    this.on("keydown",function(e){
       var val = jQuery(this).val().replace(",","").replace(".","");      //replace the comma and dots
       var valInt = parseInt(val);         //remove the zeros in the left
       val = valInt+"";                    //put the comma in the right place
